@@ -17,6 +17,8 @@
 		355A476E251A244A00CE6223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355A476C251A244A00CE6223 /* LaunchScreen.storyboard */; };
 		355A4779251A244A00CE6223 /* MVVMSampleIOS01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A4778251A244A00CE6223 /* MVVMSampleIOS01Tests.swift */; };
 		355A4784251A244A00CE6223 /* MVVMSampleIOS01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A4783251A244A00CE6223 /* MVVMSampleIOS01UITests.swift */; };
+		35B6A3F0251A2A5900A3C39C /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6A3EF251A2A5900A3C39C /* PushButton.swift */; };
+		35B6A3F2251A326300A3C39C /* PushButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B6A3F1251A326300A3C39C /* PushButtonGroup.swift */; };
 		6E92CB41306AFDA8D6E6AFD4 /* Pods_MVVMSampleIOS01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254EB40CA5379E6C0AAC9BA7 /* Pods_MVVMSampleIOS01.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		355A477F251A244A00CE6223 /* MVVMSampleIOS01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMSampleIOS01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		355A4783251A244A00CE6223 /* MVVMSampleIOS01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSampleIOS01UITests.swift; sourceTree = "<group>"; };
 		355A4785251A244A00CE6223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35B6A3EF251A2A5900A3C39C /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		35B6A3F1251A326300A3C39C /* PushButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButtonGroup.swift; sourceTree = "<group>"; };
 		3A74F3A79F2ADC8173B6C0E4 /* Pods_MVVMSampleIOS01Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMSampleIOS01Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4177C3FBEFD61241CF4C377D /* Pods-MVVMSampleIOS01UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSampleIOS01UITests.release.xcconfig"; path = "Target Support Files/Pods-MVVMSampleIOS01UITests/Pods-MVVMSampleIOS01UITests.release.xcconfig"; sourceTree = "<group>"; };
 		836C7C157D1A6BE1EF4ED4EB /* Pods-MVVMSampleIOS01UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSampleIOS01UITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMSampleIOS01UITests/Pods-MVVMSampleIOS01UITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +105,6 @@
 				836C7C157D1A6BE1EF4ED4EB /* Pods-MVVMSampleIOS01UITests.debug.xcconfig */,
 				4177C3FBEFD61241CF4C377D /* Pods-MVVMSampleIOS01UITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,6 +140,8 @@
 				355A476A251A244A00CE6223 /* Assets.xcassets */,
 				355A476C251A244A00CE6223 /* LaunchScreen.storyboard */,
 				355A476F251A244A00CE6223 /* Info.plist */,
+				35B6A3EF251A2A5900A3C39C /* PushButton.swift */,
+				35B6A3F1251A326300A3C39C /* PushButtonGroup.swift */,
 			);
 			path = MVVMSampleIOS01;
 			sourceTree = "<group>";
@@ -402,6 +407,8 @@
 				355A4766251A244800CE6223 /* ViewController.swift in Sources */,
 				355A4762251A244800CE6223 /* AppDelegate.swift in Sources */,
 				355A4764251A244800CE6223 /* SceneDelegate.swift in Sources */,
+				35B6A3F0251A2A5900A3C39C /* PushButton.swift in Sources */,
+				35B6A3F2251A326300A3C39C /* PushButtonGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
