@@ -19,5 +19,7 @@ target 'MVVMSampleIOS01' do
   
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxBlocking'
+  pod 'RxTest'
 
 end

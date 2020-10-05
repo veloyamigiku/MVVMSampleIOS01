@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		132B6483822B3C874D0CC08E /* Pods_MVVMSampleIOS01UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B627A7AD6B32A6F3C9E17D5A /* Pods_MVVMSampleIOS01UITests.framework */; };
 		18F7DAA4E9116177297328AD /* Pods_MVVMSampleIOS01Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A74F3A79F2ADC8173B6C0E4 /* Pods_MVVMSampleIOS01Tests.framework */; };
+		353116EC25221B0F00DAB8FB /* PushButtonGroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353116EB25221B0F00DAB8FB /* PushButtonGroupTests.swift */; };
 		355A4762251A244800CE6223 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A4761251A244800CE6223 /* AppDelegate.swift */; };
 		355A4764251A244800CE6223 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A4763251A244800CE6223 /* SceneDelegate.swift */; };
 		355A4766251A244800CE6223 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355A4765251A244800CE6223 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		00ECFA140559A09F1C15F7AB /* Pods-MVVMSampleIOS01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSampleIOS01.release.xcconfig"; path = "Target Support Files/Pods-MVVMSampleIOS01/Pods-MVVMSampleIOS01.release.xcconfig"; sourceTree = "<group>"; };
 		08D46556F69865775236E5AC /* Pods-MVVMSampleIOS01Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSampleIOS01Tests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMSampleIOS01Tests/Pods-MVVMSampleIOS01Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		254EB40CA5379E6C0AAC9BA7 /* Pods_MVVMSampleIOS01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMSampleIOS01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		353116EB25221B0F00DAB8FB /* PushButtonGroupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButtonGroupTests.swift; sourceTree = "<group>"; };
 		355A475E251A244800CE6223 /* MVVMSampleIOS01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSampleIOS01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		355A4761251A244800CE6223 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		355A4763251A244800CE6223 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				355A4778251A244A00CE6223 /* MVVMSampleIOS01Tests.swift */,
 				355A477A251A244A00CE6223 /* Info.plist */,
+				353116EB25221B0F00DAB8FB /* PushButtonGroupTests.swift */,
 			);
 			path = MVVMSampleIOS01Tests;
 			sourceTree = "<group>";
@@ -358,17 +361,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MVVMSampleIOS01/Pods-MVVMSampleIOS01-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -417,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				355A4779251A244A00CE6223 /* MVVMSampleIOS01Tests.swift in Sources */,
+				353116EC25221B0F00DAB8FB /* PushButtonGroupTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
