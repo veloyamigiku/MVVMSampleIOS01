@@ -2,8 +2,8 @@
 //  PushButtonGroupTests.swift
 //  MVVMSampleIOS01Tests
 //
-//  Created by Leon on 2020/09/28.
-//  Copyright © 2020 Leon. All rights reserved.
+//  Created by velo.yamigiku on 2020/09/28.
+//  Copyright © 2020 velo.yamigiku. All rights reserved.
 //
 
 import XCTest
