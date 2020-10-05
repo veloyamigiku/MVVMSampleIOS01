@@ -20,7 +20,6 @@ class PushButtonGroup {
     private var buttonOnOffDict: [Int:BehaviorRelay<Bool>]
     private var isAllOnRelay: BehaviorRelay<Bool>
     var isAllOn: Observable<Bool>
-    //var pushedButton: PublishRelay<Int>
     private var disposeBag: DisposeBag
     
     init(rowCount: Int, colCount: Int) {
@@ -45,10 +44,6 @@ class PushButtonGroup {
         }
         self.isAllOnRelay = BehaviorRelay(value: false)
         self.isAllOn = isAllOnRelay.asObservable()
-        /*self.pushedButton = PublishRelay()
-        self.pushedButton.asObservable().subscribe(onNext: { buttonNumber in
-            self.push(buttonNumber: buttonNumber)
-        }).disposed(by: self.disposeBag)*/
     }
     
     func getButtonOnOff(buttonNumber: Int) -> Observable<Bool> {
@@ -58,7 +53,7 @@ class PushButtonGroup {
         return buttonOnOff.asObservable()
     }
     
-    /*private */func push(buttonNumber: Int) {
+    func push(buttonNumber: Int) {
         
         guard let button = buttonDict[buttonNumber] else {
             return
@@ -112,7 +107,11 @@ class PushButtonGroup {
     
     private func checkAllOn() -> Bool {
         var onCount = 0
-        // on check logic
+        for (_, button) in buttonDict {
+            if button.on {
+                onCount += 1
+            }
+        }
         if (onCount == self.allCount) {
             return true
         } else {
