@@ -30,4 +30,8 @@ class PushButtonGroupViewModel: NSObject {
         pushButtonGroup.push(buttonNumber: buttonNumber)
     }
     
+    func clearButtons() {
+        pushButtonGroup.clearButtonOnOff()
+    }
+    
 }

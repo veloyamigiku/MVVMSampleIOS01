@@ -70,7 +70,20 @@ class ViewController: UIViewController {
         
         pbgVm.getIsAllOn().subscribe(onNext: { isAllOn in
             if isAllOn {
-                print("isAllOn:", isAllOn)
+                let dialog = UIAlertController(
+                    title: "Puzzle",
+                    message: "Puzzle Clear",
+                    preferredStyle: .alert)
+                dialog.addAction(UIAlertAction(
+                    title: "OK",
+                    style: .default,
+                    handler: { (action: UIAlertAction!) in
+                        self.pbgVm.clearButtons()
+                }))
+                self.present(
+                    dialog,
+                    animated: true,
+                    completion: nil)
             }
         })
         .disposed(by: disposeBag)

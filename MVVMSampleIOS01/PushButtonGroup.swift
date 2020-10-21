@@ -119,4 +119,11 @@ class PushButtonGroup {
         }
     }
     
+    func clearButtonOnOff() -> Void {
+        for (_, button) in buttonDict {
+            button.on = false
+            buttonOnOffDict[button.number]?.accept(false)
+        }
+    }
+    
 }
